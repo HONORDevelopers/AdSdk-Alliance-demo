@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hihonor.adsdk.banner.api.BannerAdRootView android:id="@+id/ad_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:id="@+id/ad_banner_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <com.hihonor.adsdk.base.widget.base.AdFlagCloseView
+        android:id="@+id/ad_flag_close_view"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        app:ads_adFlagText="@string/ads_ad_flag"
+        app:ads_bgColor="@color/ads_app_magic_mask_thin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</com.hihonor.adsdk.banner.api.BannerAdRootView>
