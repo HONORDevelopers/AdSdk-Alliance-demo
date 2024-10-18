@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) Honor Device Co., Ltd. 2021-2023. All rights reserved.
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ad_auto_size_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/ad_brand_logo"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="@dimen/ads_app_magic_dimens_element_vertical_middle"
+        android:visibility="gone" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_toEndOf="@+id/ad_brand_logo"
+        android:layout_toStartOf="@+id/ad_download"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/ad_brand_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/ad_flag_view"
+            app:layout_constraintHorizontal_bias="0"
+            android:textAlignment="viewStart"
+            android:lines="1"
+            android:ellipsize="end"
+            android:fontFamily="@string/ads_magic_text_font_family_regular"
+            android:textColor="@color/ads_magic_color_text_secondary"
+            android:textSize="@dimen/ads_app_magic_text_size_body3"
+            tools:text="品牌名称"/>
+
+        <com.hihonor.adsdk.base.widget.base.AdFlagCloseView
+            android:id="@+id/ad_flag_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/ads_app_magic_dimens_element_vertical_middle"
+            android:layout_marginEnd="@dimen/ads_app_magic_dimens_element_vertical_middle"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:ads_adFlagText="@string/ads_ad_flag"
+            app:ads_bgColor="@color/ads_magic_mask_thin"
+            app:ads_adFlagTextColor="@color/ads_app_magic_text_primary_inverse"
+            app:ads_singleAdFlagShow="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ad_brand_name" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.hihonor.adsdk.base.widget.base.AdFlagCloseView
+        android:id="@+id/ad_close_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true" />
+
+    <com.hihonor.adsdk.base.widget.download.HnDownloadButton
+        android:id="@+id/ad_download"
+        android:layout_toStartOf="@+id/ad_close_view"
+        android:layout_centerVertical="true"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
