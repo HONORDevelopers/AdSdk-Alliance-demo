@@ -1,0 +1,59 @@
+/*
+ * Copyright (c) Honor Device Co., Ltd. 2022-2022. All rights reserved.
+ */
+
+plugins {
+    id 'com.android.application'
+}
+android {
+    compileSdk compileSdk_version
+    buildToolsVersion buildTools_version
+
+    defaultConfig {
+        applicationId "com.hihonor.adsdk.union.demo.external"
+        minSdk minSdk_version
+        targetSdk targetSdk_version
+        versionCode app_version_code
+        versionName app_version_name
+
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildFeatures {
+        viewBinding true
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+}
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+dependencies {
+    implementation androidx_appcompat
+    implementation androidx_material
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.navigation:navigation-fragment:2.3.5'
+    implementation 'androidx.navigation:navigation-ui:2.3.5'
+
+    implementation honor_ads_lite
+    implementation honor_ads_tools
+}
