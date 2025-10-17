@@ -1,0 +1,27 @@
+/*
+ * Copyright (c) Honor Device Co., Ltd. 2022-2022. All rights reserved.
+ */
+
+apply from: 'version.gradle'
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+        maven {url 'https://developer.hihonor.com/repo/'}
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:4.1.3"
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        maven {url 'https://developer.hihonor.com/repo/'}
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

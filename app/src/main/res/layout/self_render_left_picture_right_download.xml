@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hihonor.adsdk.picturetextad.PictureTextAdRootView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_view"
+    android:paddingStart="@dimen/ads_app_magic_dimens_default_start"
+    android:paddingEnd="@dimen/ads_app_magic_dimens_default_end"
+    android:paddingTop="@dimen/ads_app_magic_dimens_element_horizontal_middle_2"
+    android:paddingBottom="@dimen/ads_app_magic_dimens_element_horizontal_middle_2"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/ads_app_magic_master_display_4">
+
+    <ImageView
+        android:id="@+id/ad_image"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/ads_app_magic_dimens_element_horizontal_large"
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:layout_toEndOf="@+id/ad_image"
+        android:layout_toStartOf="@+id/ad_download_close_layout"
+        android:layout_marginEnd="12dp"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/ad_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/ads_app_magic_color_text_primary"
+            android:textSize="@dimen/ads_app_magic_text_size_body1"
+            android:fontFamily="@string/ads_app_magic_text_font_family_medium"
+            android:ellipsize="end"
+            android:textAlignment="viewStart"
+            android:maxLines="1"
+            android:lines="1"
+            tools:text="广告标题广告标题广告标题广告标题"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.hihonor.adsdk.base.widget.base.AdFlagCloseView
+                android:id="@+id/ad_flag_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/ads_app_magic_dimens_element_horizontal_small"
+                android:layout_gravity="center_vertical"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:ads_adFlagText="@string/ads_ad_flag"
+                app:ads_bgColor="@color/ads_app_magic_mask_thin"
+                app:ads_adFlagTextColor="@color/ads_app_magic_text_primary_inverse"
+                app:ads_singleAdFlagShow="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ad_brand_name" />
+
+
+            <TextView
+                android:id="@+id/ad_content"
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/ads_app_magic_color_text_secondary"
+                android:textSize="@dimen/ads_app_magic_text_size_body2"
+                android:fontFamily="@string/ads_app_magic_text_font_family_regular"
+                android:ellipsize="end"
+                android:textAlignment="viewStart"
+                android:maxLines="1"
+                android:lines="1"
+                tools:text="广告标题广告标题广告标题广告标题"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/ad_download_close_layout"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.hihonor.adsdk.base.widget.download.HnDownloadButton
+            android:id="@+id/ad_download"
+            android:layout_width="80dp"
+            android:layout_height="28dp"
+            android:layout_gravity="center_vertical" />
+
+        <com.hihonor.adsdk.base.widget.base.AdFlagCloseView
+            android:id="@+id/ad_close_view"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/ads_app_magic_dimens_element_horizontal_middle" />
+    </LinearLayout>
+
+</com.hihonor.adsdk.picturetextad.PictureTextAdRootView>

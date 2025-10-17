@@ -1,0 +1,94 @@
+<!--
+  ~ Copyright (c) Honor Device Co., Ltd. 2021-2023. All rights reserved.
+  -->
+
+<resources>
+    <string name="app_name">荣耀广告SDK集成Demo</string>
+
+    <!--    首页item-->
+    <string name="app_banner_ad">Banner广告</string>
+    <string name="app_reward_ad">激励广告</string>
+    <string name="app_splash_ad">开屏广告</string>
+    <string name="app_interstital_ad">插屏广告</string>
+    <string name="app_banner_default">模板渲染</string>
+    <string name="app_banner_gallery_self">ViewPager实现Banner广告自渲染</string>
+    <string name="app_banner_gallery">模板渲染：轮播图样式</string>
+    <string name="app_picture_text_ad">信息流广告</string>
+    <string name="app_test_tools">测试工具</string>
+    <string name="app_search_native_ad">搜索APP集成原生广告</string>
+    <string name="app_picture_text_template_render_ad">模板渲染</string>
+    <string name="app_picture_text_template_render_big">模板渲染：大图文</string>
+    <string name="app_picture_text_template_render_small">模板渲染：小图文</string>
+    <string name="app_picture_text_template_render_three">模板渲染：三图文</string>
+    <string name="app_picture_text_template_render_app">模板渲染：应用图文</string>
+    <string name="app_picture_text_template_render_landscape">模板渲染：横版视频</string>
+    <string name="app_picture_text_template_render_portrait">模板渲染：竖版视频</string>
+    <string name="app_picture_text_self_render_ad">自渲染</string>
+    <string name="app_picture_text_install_ad">下载安装类广告</string>
+    <string name="banner_describe">选择对应的广告尺寸后点击加载广告</string>
+    <string name="banner_Interval_describe">默认轮播时间为30s</string>
+    <string name="app_load_ad">加载广告</string>
+    <string name="app_banner_720">1280*720</string>
+    <string name="app_banner_640">1280*640</string>
+    <string name="app_banner_1080">1080*180</string>
+    <string name="app_banner_225">225*150</string>
+    <string name="app_ad_close_tip">广告关闭</string>
+    <string name="app_download">下载</string>
+    <string name="app_replay">重播</string>
+
+    <!-- 非首页item-->
+    <string name="ad_item">广告</string>
+    <string name="loading_item">加载中。。。</string>
+    <string name="error_msg">错误信息</string>
+    <string name="load_splash_portrait_picture_1080_1920">模板渲染：竖版图片1080*1920</string>
+    <string name="load_splash_portrait_picture_1080_1620">模板渲染：竖版图片1080*1620</string>
+    <string name="load_splash_portrait_video_720_1280">模板渲染：竖版视频720*1280</string>
+    <string name="load_splash_landscape_video_1280_720">模板渲染：横版视频1280*720</string>
+    <string name="load_self_Splash">加载开屏自渲染广告</string>
+    <string name="load_pre_cache">预缓存请求</string>
+    <string name="load_reward_landscape_1280_720">加载横屏横版激励视频广告</string>
+    <string name="load_reward_portrait_1280_720">加载竖屏横版激励视频广告</string>
+    <string name="load_reward_landscape_720_1280">加载横屏竖版激励视频广告</string>
+    <string name="load_reward_portrait_720_1280">加载竖屏竖版激励视频广告</string>
+    <string name="load_interstitial">加载插屏广告</string>
+    <string name="load_interstitial_picture_1280_720_landscape">图片：屏幕横向1280*720</string>
+    <string name="load_interstitial_picture_1280_720_portrait">图片：屏幕竖向1280*720</string>
+    <string name="load_interstitial_picture_720_1280_landscape">图片：屏幕横向720*1280</string>
+    <string name="load_interstitial_picture_720_1280_portrait">图片：屏幕竖向720*1280</string>
+    <string name="load_interstitial_video_1280_720_landscape">视频：屏幕横向1280*720</string>
+    <string name="load_interstitial_video_1280_720_portrait">视频：屏幕竖向1280*720</string>
+    <string name="load_interstitial_video_720_1280_landscape">视频：屏幕横向720*1280</string>
+    <string name="load_interstitial_video_720_1280_portrait">视频：屏幕竖向720*1280</string>
+
+    <string name="query_ad_pre_cache_count">查找缓存的不过期的广告数量</string>
+    <string name="media_data">媒体数据</string>
+    <string name="init_falied">初始化失败</string>
+    <string name="ad_impression_success">展示成功</string>
+    <string name="ad_impression_failed">展示失败</string>
+    <string name="ad_clicked">点击广告</string>
+    <string name="item_clicked">点击开启预缓存</string>
+    <string name="miniapp_start">跳转小程序</string>
+    <string name="ad_skip">广告跳过</string>
+    <string name="slotid_null">Slotid为空</string>
+    <string name="click">点击了item</string>
+    <string name="application_name">应用名称：</string>
+    <string name="application_version">\t\n应用版本号：</string>
+    <string name="app_package">\t\n应用包名：</string>
+    <string name="developer_name">\t\n开发者公司名称：</string>
+    <string name="permissions_url">\t\n隐私协议超链：</string>
+    <string name="privacy_agreement_url">\t\n权限列表超链：</string>
+    <string name="home_page">\t\n主页超链：</string>
+    <string name="wrong_msg">出错啦：</string>
+    <string name="get_reward">获得奖励：</string>
+    <string name="reward_item">Q点券</string>
+    <string name="app_market">应用市场</string>
+    <string name="app_copy_right">版权所有©2021-2023 荣耀 保留一切权利</string>
+    <string name="splash_request_failed">开屏广告获取广告失败</string>
+    <string name="slot_empty_msg">请先选择广告尺寸</string>
+    <string name="load_success">加载成功</string>
+    <string name="demo_ad_sdk_version">广告SDK版本：</string>
+    <string name="ads_video_replay">重播</string>
+    <string name="ads_ad_flag">广告</string>
+    <string name="ads_save">保存</string>
+    <string name="ads_edit_visit_source">请输入启动来源</string>
+</resources>

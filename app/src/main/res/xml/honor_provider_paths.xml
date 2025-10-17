@@ -1,0 +1,9 @@
+<!--
+  ~ Copyright (c) Honor Device Co., Ltd. 2022-2022. All rights reserved.
+  -->
+
+<paths>
+    <external-files-path
+        name="external_file_path"
+        path="." />
+</paths>

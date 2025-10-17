@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <color name="listcard_bg">#202022</color>
+
+    <color name="ads_app_magic_button_default">#19FFFFFF</color>
+    <color name="ads_app_magic_color_quaternary">#4DFFFFFF</color>
+    <item name="ads_app_magic_tertiary_content_alpha" format="float" type="dimen">0.38</item>
+    <color name="ads_app_magic_primary">#FFFFFF</color>
+    <color name="ads_app_magic_color_text_primary">#DBFFFFFF</color>
+    <color name="ads_app_magic_badge_red">#D93A34</color>
+    <color name="ads_app_magic_functional_blue">#5790FF</color>
+    <color name="ads_app_magic_mask_thin">#66000000</color>
+    <color name="ads_app_magic_white">#E6E6E6</color>
+    <color name="ads_app_magic_color_text_secondary">#99FFFFFF</color>
+    <color name="ads_app_magic_text_primary_inverse">#FFFFFF</color>
+    <color name="ads_magic_color_text_secondary">#99FFFFFF</color>
+    <color name="ads_magic_mask_thin">#66000000</color>
+
+    <color name="ads_app_magic_card_bg">#404040</color>
+</resources>

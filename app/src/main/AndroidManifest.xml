@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.hihonor.adsdk.demo.external">
+
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <!--允许程序打开网络套接字-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--允许程序获取网络状态-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!--允许程序访问WiFi网络信息-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!--允许程序访问CellID或WiFi热点来获取粗略的位置-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!--后台位置信息 Android 10 (API level 29) 或更高版本 -->
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission
+        android:name="android.permission.QUERY_ALL_PACKAGES"
+        tools:ignore="QueryAllPackagesPermission" />
+
+    <queries>
+        <provider
+            android:authorities="com.hihonor.id"
+            tools:replace="android:authorities" />
+        <provider
+            android:authorities="content://com.hihonor.systemappsupdater.appupdateprovider"
+            tools:replace="android:authorities" />
+    </queries>
+    <application
+        android:name=".DemoApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Adsdk">
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.Adsdk"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+
+            <!--            <intent-filter>-->
+            <!--                <action android:name="android.intent.action.MAIN" />-->
+
+            <!--                <category android:name="android.intent.category.LAUNCHER" />-->
+            <!--            </intent-filter>-->
+
+        </activity>
+        <activity
+            android:name=".banner.BannerActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Adsdk"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".banner.BannerDefaultActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Adsdk"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".banner.BannerGalleryActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Adsdk"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".picturetext.PictureTextActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Adsdk"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".picturetext.PictureTextTemplateRenderActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Adsdk"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".picturetext.PictureTextSelfRenderActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Adsdk"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <activity
+            android:name=".splash.SplashActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Adsdk"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <activity
+            android:name=".reward.RewardActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Adsdk"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".interstital.InterstitialActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Adsdk"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <activity
+            android:name=".splash.SplashDefaultActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Adsdk.NoActionBar"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".splash.LandscapeSplashActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.Adsdk.NoActionBar"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+    </application>
+
+</manifest>

@@ -1,0 +1,32 @@
+<!--
+  ~ Copyright (c) Honor Device Co., Ltd. 2022-2022. All rights reserved.
+  -->
+
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="fab_margin_12">12dp</dimen>
+    <dimen name="fab_margin_84">84dp</dimen>
+    <dimen name="corner_radius_mediums">12dp</dimen>
+    <dimen name="button_height_36">36dp</dimen>
+    <dimen name="dimens_12">12dp</dimen>
+    <dimen name="dimens_24">24dp</dimen>
+    <dimen name="ads_magic_corner_radius_button">18dp</dimen>
+
+    <dimen name="ads_app_magic_dimens_element_horizontal_middle">8dp</dimen>
+    <dimen name="ads_app_magic_dimens_max_start">24dp</dimen>
+    <dimen name="ads_app_magic_dimens_max_end">24dp</dimen>
+    <dimen name="ads_app_magic_corner_radius_small">8dp</dimen>
+    <dimen name="ads_app_magic_dimens_element_vertical_large">16dp</dimen>
+    <dimen name="ads_app_magic_dimens_element_horizontal_large_2">24dp</dimen>
+    <dimen name="ads_app_magic_text_size_body1">16sp</dimen>
+    <dimen name="ads_app_magic_text_size_body3">12sp</dimen>
+    <dimen name="ads_app_magic_text_size_subtitle1">18sp</dimen>
+    <dimen name="ads_app_magic_text_size_body2">14sp</dimen>
+    <dimen name="ads_app_magic_dimens_element_vertical_middle">8dp</dimen>
+    <dimen name="ads_app_magic_dimens_default_start">12dp</dimen>
+    <dimen name="ads_app_magic_dimens_default_end">12dp</dimen>
+    <dimen name="ads_app_magic_dimens_element_horizontal_middle_2">12dp</dimen>
+    <dimen name="ads_app_magic_master_display_4">80dp</dimen>
+    <dimen name="ads_app_magic_dimens_element_horizontal_large">16dp</dimen>
+    <dimen name="ads_app_magic_dimens_element_horizontal_small">4dp</dimen>
+</resources>

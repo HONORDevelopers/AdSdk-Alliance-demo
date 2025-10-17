@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/picture_text_template_render_big"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/app_picture_text_template_render_big"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/picture_text_template_render_small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/app_picture_text_template_render_small"
+            app:layout_constraintTop_toBottomOf="@id/picture_text_template_render_big" />
+
+        <Button
+            android:id="@+id/picture_text_template_render_three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/app_picture_text_template_render_three"
+            app:layout_constraintTop_toBottomOf="@id/picture_text_template_render_small"/>
+
+        <Button
+            android:id="@+id/picture_text_template_render_app"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/app_picture_text_template_render_app"
+            app:layout_constraintTop_toBottomOf="@id/picture_text_template_render_three" />
+
+        <Button
+            android:id="@+id/picture_text_template_render_landscape"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/app_picture_text_template_render_landscape"
+            app:layout_constraintTop_toBottomOf="@id/picture_text_template_render_app" />
+
+        <Button
+            android:id="@+id/picture_text_template_render_portrait"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/app_picture_text_template_render_portrait"
+            app:layout_constraintTop_toBottomOf="@id/picture_text_template_render_landscape"/>
+
+        <Button
+            android:id="@+id/picture_text_self_render"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_picture_text_self_render_ad"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/picture_text_template_render_portrait" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>
