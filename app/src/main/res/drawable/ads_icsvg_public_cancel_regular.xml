@@ -1,0 +1,10 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="16dp"
+    android:height="16dp"
+    android:viewportWidth="96"
+    android:viewportHeight="96">
+  <path
+      android:fillColor="@color/honor_ads_magic_text_hint"
+      android:pathData="M74.4345,19.2345l2.1,2.1c0.6,0.6 0.6,1.5 0,2.1L52.1345,47.9345l24.4,24.4c0.6,0.6 0.6,1.5 0,2.1l-2.1,2.1c-0.6,0.6 -1.5,0.6 -2.1,0L47.9345,52.1345L23.5345,76.5345c-0.6,0.6 -1.5,0.6 -2.1,0l-2.1,-2.1c-0.6,-0.6 -0.6,-1.5 0,-2.1l24.4,-24.4L19.2345,23.5345c-0.6,-0.6 -0.6,-1.5 0,-2.1l2.1,-2.1c0.6,-0.6 1.5,-0.6 2.1,0l24.4,24.4L72.3345,19.2345C72.9345,18.7345 73.8345,18.7345 74.4345,19.2345z"
+      android:fillAlpha="0.9"/>
+</vector>

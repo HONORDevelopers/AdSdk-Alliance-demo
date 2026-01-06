@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <corners  android:radius="@dimen/ads_magic_corner_radius_button"/>
+    <solid android:color="@color/ads_app_magic_color_quaternary"/>
+</shape>

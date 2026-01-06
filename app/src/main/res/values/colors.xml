@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) Honor Device Co., Ltd. 2022-2022. All rights reserved.
+  -->
+
+<resources>
+    <color name="purple_200">#0979E9</color>
+    <color name="purple_500">#2E93FF</color>
+    <color name="purple_700">#004EA2</color>
+    <color name="teal_200">#76D9C3</color>
+    <color name="teal_700">#2FAB8F</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="listcard_bg">#FFFFFF</color>
+
+    <color name="ads_app_magic_button_default">#0C000000</color>
+    <color name="ads_app_magic_color_bg_translucent">#00FFFFFF</color>
+    <color name="ads_app_magic_color_quaternary">#33000000</color>
+    <item name="ads_app_magic_tertiary_content_alpha" format="float" type="dimen">0.38</item>
+    <color name="ads_app_magic_primary">#000000</color>
+    <color name="ads_app_magic_color_text_primary">#E5000000</color>
+    <color name="ads_app_magic_badge_red">#EA3C37</color>
+    <color name="ads_app_magic_functional_blue">#256FFF</color>
+    <color name="ads_app_magic_mask_thin">#33000000</color>
+    <color name="ads_app_magic_white">#FFFFFF</color>
+    <color name="ads_app_magic_color_text_secondary">#99000000</color>
+    <color name="ads_app_magic_color_text_primary_translucent">#FFFFFF</color>
+    <color name="ads_app_magic_text_primary_inverse">#FFFFFF</color>
+    <color name="ads_magic_mask_thin">#33000000</color>
+
+    <color name="ads_app_magic_card_bg">#FFFFFF</color>
+    <color name="ad_base_color_FFC8C8C8">#FFC8C8C8</color>
+    <color name="ads_magic_color_text_secondary">#99000000</color>
+    <color name="ads_magic_color_text_blue">#256FFF</color>
+</resources>
